@@ -1,0 +1,252 @@
+// Fonts //
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+// Variables //
+$pading: 20px;
+$background-grad: radial-gradient(rgb(161, 161, 161), white);
+$background: rgb(255, 255, 255);
+$gray: rgb(8, 19, 27);
+$font: 'Space Grotesk', sans-serif;
+$foreground: black;
+$footer-foreground: white;
+// Common Stuff //
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  background: $background-grad;
+  color: $foreground;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: $gray;
+  color: $background;
+}
+// My Custom Styles //
+.divider {
+  height: 2px;
+  margin-left: 5px;
+  width: 40px;
+  margin-top: 10px;
+  background: linear-gradient(45deg, $gray, $background);
+}
+
+// Header
+ul.header {
+  padding: $pading;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(3, 6, 31);
+  color: rgb(255, 255, 255);
+  list-style: none;
+  display: flex;
+  li {
+    padding-left: $pading;
+    padding-right: $pading;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: larger;
+    &:hover {
+      color: $gray;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    flex-direction: row;
+  }
+}
+
+// Hero Sections
+.hero {
+  padding-left: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h1 {
+    font-size: 45px;
+    margin: 0;
+  }
+  .hero-title {
+    margin-top: 50px;
+  }
+}
+
+// Sections //
+.section-title {
+  font-size: 40px;
+  margin: 0;
+  margin-left: 20px;
+  padding: $pading;
+}
+section {
+  align-items: center;
+  justify-content: center;
+}
+
+// Cards //
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  @media only screen and (max-width: 420px) {
+    margin-left: 25vw;
+  }
+}
+.cards-cert {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @media only screen and (max-width: 600px) {
+    margin-left: 20vw;
+  }
+  & > button {
+    width: 200px !important;
+    height: 100px !important;
+    font-size: large;
+  }
+}
+
+.card {
+  background-color: darken($color: $background, $amount: 8);
+  width: 200px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: all 0.5s ease;
+  height: 110px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 4px 2px 4px 2px;
+    background-color: darken($color: $background, $amount: 5);
+  }
+  .card-title {
+    padding-top: 5%;
+    font-size: 20px !important;
+  }
+  .card-icon {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    margin-left: -20px;
+  }
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: fit-content;
+  margin: 0;
+  padding: 2px;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: darken($color: $background, $amount: 5);
+  transition: all 0.5s ease;
+  margin-left: 3px;
+  p {
+    text-align: center;
+  }
+  &:hover {
+    background-color: darken($color: $background, $amount: 7);
+  }
+  img {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  @media only screen and (max-width: 420px) {
+    margin-left: -20px;
+  }
+}
+// Button //
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(212, 138, 138);
+  border: 0;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  font-family: $font;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(134, 73, 73);
+  }
+}
+
+// Links //
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    transform: scale(1.1, 1.1);
+    &::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+// Footer //
+.footer {
+  min-height: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: fit-content;
+  justify-content: center;
+  background-color: rgb(0, 3, 19);
+  text-align: center;
+  display: flex;
+  color: $footer-foreground;
+  padding: 20px;
+  .name {
+    font-size: 15px;
+  }
+  .links {
+    font-size: 25px;
+    .copy {
+      font-size: 15px;
+    }
+  }
+  & > div {
+    margin: 5px;
+  }
+  @media only screen and (max-width: 420px) {
+    flex-direction: column;
+  }
+}
+
+// About //
+.about {
+  font-family: 'Josefin Sans', sans-serif;
+  .about-info {
+    margin: 10px;
+    line-height: 50px;
+    font-size: larger;
+  }
+}
