@@ -1,7 +1,7 @@
 import 'animate.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import About from './components/layout/About'
+// import About from './components/layout/About'
 import NotFound from './components/layout/404'
 import Skills from './components/layout/Skills'
 import Certifications from './components/layout/Certifications'
