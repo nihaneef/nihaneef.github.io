@@ -22,6 +22,11 @@ const Certifications = () => {
       link: 'https://www.credly.com/badges/d3856a56-9b02-464d-8640-0618d1edf2dd',
     },
     {
+      title: 'Azure Devops',
+      link: 'https://www.credly.com/badges/c355d69e-f5b0-4209-85a5-55e8392f5013',
+      image: 'https://images.credly.com/size/340x340/images/107e2eb6-f394-40eb-83d2-d8c9b7d34555/exam-az400-600x600.png'
+    },
+    {
       image:
         'https://images.credly.com/size/680x680/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png',
       title: 'AWS Cloud Practitioner',
