@@ -21,18 +21,14 @@ function App() {
               <p className='about-info'>
                 A Cloud and Virtualization specialist with over 19 years
                 experience in IT Industry. Azure, AWS and Citrix Certified.
-                Specialist in Designing and Implementing Citrix XenApp and
-                XenDesktop Environment.Worked on complex environments with
-                Excellent troubleshooting skills. Worked on multiple high profile projects and received lot of customer appreciations.Looking for an opportunity within the organization on cloud and Devops technologies wherein I can utilize the skills I have earned.
+                Specialist in Designing and Implementing CLoud and Citrix Environment.Worked on complex environments with
+                Excellent troubleshooting skills. Worked on multiple high profile projects and received lot of customer appreciations.Looking for an opportunity on cloud and Devops technologies .
               </p>
             </div>
           </div>
           <Skills />
           <Certifications />
         </Route>
-        {/* <Route path='/about'>
-          <About />
-        </Route> */}
         <Route>
           <NotFound />
         </Route>
