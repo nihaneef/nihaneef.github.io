@@ -29,13 +29,13 @@ const Certifications = () => {
     {
      image:
         'https://images.credly.com/size/680x680/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/azure-security-engineer-associate600x600.png',
-      title: 'Azure Network Engineer',
+      title: 'Azure Security Engineer',
       link: 'https://www.credly.com/badges/94051634-2a35-452d-ad6f-174bff665efb',
     },
     {
      image:
         'https://images.credly.com/size/680x680/images/c3a2e51d-7984-48cc-a4cb-88d4e8487037/azure-network-engineer-associate-600x600.pngg',
-      title: 'Citrix Certified Associate',
+      title: 'Azure Network Engineer',
       link: 'https://www.credly.com/earner/earned/badge/5a055813-cace-4a74-8538-cda79de0f853',
     },
     {
