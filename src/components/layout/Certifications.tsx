@@ -27,6 +27,18 @@ const Certifications = () => {
       image: 'https://images.credly.com/size/340x340/images/107e2eb6-f394-40eb-83d2-d8c9b7d34555/exam-az400-600x600.png'
     },
     {
+     image:
+        'https://images.credly.com/size/680x680/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/azure-security-engineer-associate600x600.png',
+      title: 'Azure Network Engineer',
+      link: 'https://www.credly.com/badges/94051634-2a35-452d-ad6f-174bff665efb',
+    },
+    {
+     image:
+        'https://images.credly.com/size/680x680/images/c3a2e51d-7984-48cc-a4cb-88d4e8487037/azure-network-engineer-associate-600x600.pngg',
+      title: 'Citrix Certified Associate',
+      link: 'https://www.credly.com/earner/earned/badge/5a055813-cace-4a74-8538-cda79de0f853',
+    },
+    {
       image:
         'https://images.credly.com/size/680x680/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png',
       title: 'AWS Cloud Practitioner',
@@ -49,7 +61,7 @@ const Certifications = () => {
         'https://images.credly.com/size/680x680/images/bed83cf2-0d1a-49d5-9fbf-2085dddf9621/CCA-V.png',
       title: 'Citrix Certified Associate',
       link: 'https://www.credly.com/badges/b1cec182-48f3-4cdd-b243-c4762fc08ec7',
-    },
+    }
   ]
   return (
     <section id='certs'>
