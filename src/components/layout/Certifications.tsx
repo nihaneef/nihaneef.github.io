@@ -40,6 +40,12 @@ const Certifications = () => {
     },
     {
       image:
+        'https://badges.images.credential.net/1521044380812.png',
+      title: 'Google Professional Cloud Architect',
+      link: 'https://www.credential.net/960083d4-2edf-40df-b967-64eee5dc13e9?key=ab887054400f36b8251e414b56faf5b71604372444fc938e3706468e71c0033f&record_view=true',
+    },
+    {
+      image:
         'https://images.credly.com/size/680x680/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png',
       title: 'AWS Cloud Practitioner',
       link: 'https://www.credly.com/badges/764edcfe-5fbb-42c1-9629-34a5e8bf0cb9',
