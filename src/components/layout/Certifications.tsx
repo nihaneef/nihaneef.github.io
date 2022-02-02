@@ -64,6 +64,12 @@ const Certifications = () => {
     },
     {
       image:
+        'https://images.credly.com/size/680x680/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png',
+      title: 'Azure Fundamentals',
+      link: 'https://www.credly.com/badges/6cd11a7d-3154-49bc-88e7-db6c755ff350',
+    
+    {
+      image:
         'https://images.credly.com/size/680x680/images/bed83cf2-0d1a-49d5-9fbf-2085dddf9621/CCA-V.png',
       title: 'Citrix Certified Associate',
       link: 'https://www.credly.com/badges/b1cec182-48f3-4cdd-b243-c4762fc08ec7',
